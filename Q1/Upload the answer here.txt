@@ -1,1 +1,102 @@
-Upload the answer here
+import java.util.Scanner;
+public class IT24102627Lab7Q1A{
+    public static void main(String[]args){
+        Scanner x = new Scanner(System.in);
+        
+        int m1,m2,m3,m4;
+        
+        
+        System.out.println("Enter marks for four subjects:");
+        
+        System.out.print("Enter subject mark 1: ");
+        m1 = x.nextInt();
+        
+       
+        System.out.print("Enter subject mark 2: ");
+        m2 = x.nextInt();
+        
+        System.out.print("Enter subject mark 3: ");
+        m3 = x.nextInt();
+        
+        System.out.print("Enter subject mark 4: ");
+        m4 = x.nextInt();
+        
+        double average = (m1+m2+m3+m4)/4.0;
+        
+        System.out.println("Average is "+ average);
+        
+        if (average>75 && average<100){
+            System.out.println("Overall Grade is Distinction");
+             
+        }
+         
+        
+        else if (average>50 && average<74){
+            System.out.println("Overall Grade is Credit");
+           
+        }
+         
+        
+       else if (average>0 && average<49){
+            System.out.println("Overall Grade is Fail");
+            
+        }
+        
+        else{
+            System.out.println("invalid average");
+        }
+        
+        
+        x.close();
+    }
+
+import java.util.Scanner;
+public class IT24102627Lab7Q1B{
+    public static void main(String[]args){
+        Scanner x = new Scanner(System.in);
+        
+        int m1,m2,m3,m4,student;
+        for( int i = 1; i <= 3; i++){
+            
+             System.out.println("student" +" " +i);
+             
+             System.out.print("Enter marks :");
+        
+        
+        m1 = x.nextInt();
+        m2 = x.nextInt();
+        m3 = x.nextInt();
+        m4 = x.nextInt();
+        
+        double average = (m1+m2+m3+m4)/4.0;
+        
+        System.out.println("Average is "+ average);
+        
+        if (average>75 && average<100){
+            System.out.println("Overall Grade is Distinction");
+             
+        }
+         
+        
+        else if (average>50 && average<74){
+            System.out.println("Overall Grade is Credit");
+           
+        }
+         
+        
+       else if (average>0 && average<49){
+            System.out.println("Overall Grade is Fail");
+            
+        }
+        
+        else{
+            System.out.println("invalid average");
+        }
+         System.out.println();
+
+            
+        }
+        
+        x.close();
+    }
+}}Upload the answer here
